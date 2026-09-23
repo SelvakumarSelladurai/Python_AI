@@ -48,6 +48,22 @@ print(result)
 # now = datetime.datetime.now()
 
 # print(math.sqrt(25))   # 5.0
-# print(number)  # 73
+# print(number)  # 73 randomly [print number from 1 to 100]
 # print(now)   # 2026-09-22 08:27:31.743302
 # print(sys.version)   # 3.13.15 (tags/v3.13.15:4061bc4, Aug  5 2026, 13:05:39) [MSC v.1944 64 bit (AMD64)]
+
+
+# Pattern 1: Import the whole module
+import math
+
+math.sqrt(16)
+
+# Import specific items from a math module
+from math import sqrt, pi
+
+# Import with alias
+import pandas as pd
+df = pd.DataFrame(data)
+
+# Import everything (avoid this)
+from math import *
